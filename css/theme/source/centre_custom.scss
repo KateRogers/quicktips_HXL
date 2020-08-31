@@ -1,0 +1,570 @@
+/**
+ * White theme for reveal.js. This is the opposite of the 'black' theme.
+ *
+ * By Katelyn rogers, based on the white theme by Hakim El Hattab http://hakim.se
+ */
+
+
+// Default mixins and settings -----------------
+@import "../template/mixins";
+@import "../template/settings";
+// ---------------------------------------------
+
+
+// Include Centre fonts: Arvo and Source Sans Pro
+@import url('https://fonts.googleapis.com/css2?family=Arvo&family=Source+Sans+Pro&display=swap');
+
+
+
+
+// Override theme settings (see ../template/settings.scss)
+$backgroundColor: #fff;
+
+$mainColor: #222;
+$headingColor: #222;
+
+$mainFontSize: 42px;
+$mainFont: 'Source Sans Pro', Helvetica, sans-serif;
+$headingFont: 'Arvo', serif;
+$headingTextShadow: none;
+$headingLetterSpacing: normal;
+$headingTextTransform: uppercase;
+$headingFontWeight: 600;
+$linkColor: #444;
+$linkColorHover: lighten( $linkColor, 15% );
+$selectionBackgroundColor: lighten( $linkColor, 35% );
+
+$heading1Size: 2.5em;
+$heading2Size: 1.6em;
+$heading3Size: 1.3em;
+$heading4Size: 1.0em;
+
+section.has-dark-background {
+	&, h1, h2, h3, h4, h5, h6 {
+		color: #fff;
+	}
+}
+
+
+section {
+	margin-top: 3rem;
+}
+
+.reveal table th {
+	font-weight: bold;
+	background-color: #1bb580;
+	font-size: 25px;
+	color:#fff}
+
+.reveal table td {
+	font-size: 22px;
+	color:#595959 }
+
+// Theme template ------------------------------
+@import "../template/theme";
+// ---------------------------------------------
+
+
+
+/*********************************************
+ * BALLOON.CSS
+ *********************************************/
+
+@import "../../../node_modules/balloon-css/src/balloon";
+
+
+/*********************************************
+ * Custom Overrides from overrides_template.css
+ *********************************************/
+
+  /* Span Clas 'popup' for underlying words that have tooltip*/
+  span.popup {
+    text-decoration: underline;
+    text-decoration-style: dotted;
+  }
+  
+  .print-pdf .pdf-page .header_bar {
+	margin-top: 0 !important;
+}
+
+body,
+.text-small,
+.text-example,
+.text-small-centre,
+.reveal p {
+	color: #333;
+	font-family: 'Source Sans Pro', sans-serif;
+	font-size: 22px !important;
+	line-height: 1.5;
+}
+
+.reveal h1, 
+.reveal h2, 
+.reveal h3, 
+.reveal h4, 
+.reveal h5, 
+.reveal h6 {
+	font-family: 'Arvo', serif;
+}
+
+.reveal h1 {
+	font-size: 73px;
+}
+
+.reveal h2 {
+	font-size: 59px;
+}
+
+.reveal h3 {
+	font-size: 47px;
+}
+
+.reveal h4 {
+	font-size: 38px;
+}
+
+.reveal h5 {
+	font-size: 30px;
+}
+
+.reveal h6 {
+	font-size: 35px;
+	color: #1bb580;
+}
+
+.reveal .text-cover {
+	font-size: 20px !important;  
+	text-align: center !important;
+	line-height: 1.5 !important;
+}
+
+.reveal a {
+	color: #007CE1;
+}
+
+.white a {
+	color: #FFF;
+	text-decoration: underline;
+}
+
+.white a:hover {
+	color: #007CE1;
+}
+
+section.has-dark-background,
+section.has-light-background {
+	text-align: center;
+	top: 20%;
+    transform: translateY(-50%);
+}
+
+.title_container {
+	margin-top: 50 !important;
+}
+
+.header_bar {
+	
+	margin-bottom: 30px !important;
+	width: fit-content;
+}
+
+.header_bar .header_title {
+	padding-right: 20px;
+}
+
+.reveal ol {
+	min-width: 410px;
+}
+
+.reveal video {
+	max-width: 80%;
+}
+
+.reveal section .logos img {
+	background: none;
+	border: none;
+	box-shadow: none;
+	margin-right: 30px;
+	width: 200px;
+}
+.reveal section .logos_big img {
+	background: none;
+	border: none;
+	box-shadow: none;
+	width: 300px;
+}
+.reveal section .logos img:last-child {
+	margin-right: 0;
+}
+
+.slide-menu-button a,
+.slide-menu-button a:hover {
+	color: #007CE1;
+}
+
+.reveal.has-light-background .slide-menu-button a,
+.slide-menu-button a:hover {
+	color: #FFF
+}
+
+.reveal.has-dark-background .slide-menu-button a,
+.slide-menu-button a:hover {
+	color: #FFF
+}
+
+.reveal .slide-number a {
+	color: #007ce1; }
+
+.reveal.has-light-background .slide-number a {
+	color: #FFF; }
+	
+.reveal.has-dark-background .slide-number a {
+	color: #FFF;
+	}
+
+
+	/* Fonts & Layout for mobile */
+@media screen and (max-width: 600px) {
+	
+	.reveal h1 {
+		font-size: 40px;
+	}
+	.reveal h2 {
+		font-size: 30px;
+	}
+	.reveal h3 {
+		font-size: 20px;
+	}
+	.reveal h4 {
+		font-size: 20px;
+	}
+
+	.reveal .text-small {
+		font-size: 16px !important; 
+		text-align: left;
+		line-height: 1.5;
+	}
+	.reveal .text-cover {
+		font-size: 15px !important;  
+		text-align: center !important;
+		line-height: 1.5 !important;
+	}
+	
+	/* for slides with lots of text */
+	.reveal .long-para {
+		font-size: 15px ; 
+		text-align: left;
+		line-height: 1.3;
+	}
+	.reveal .text-ex-small{
+		font-size: 12px !important; 
+		text-align: left;
+		line-height: 1.5;
+	}
+	.reveal .text-small-centre {
+		font-size: 16px; 
+		text-align: left;
+		line-height: 1.5;
+	}
+
+	.reveal p.image-text {
+		font-size: .4em !important; 
+	}
+
+	.reveal .header_title {
+		padding-left: 20px !important;
+		color: #ffffff;
+		line-height: 120px !important;
+		font-size: 1em !important;
+		font-weight: bold !important;
+	}
+
+	.reveal ol, ul {
+		min-width: 80%;
+	}
+
+	.reveal .text-bottom {
+		font-size: .4em !important;
+	}
+
+	.reveal .sm-mobile {
+		font-size: 15px !important;
+	}
+	.reveal section .logos img {
+		background: none;
+		border: none;
+		box-shadow: none;
+		margin-right: 30px;
+		width: 100px;
+	}
+	.reveal section .logos_big {
+		background: none;
+		border: none;
+		box-shadow: none;
+		width: 200px;
+	}
+
+}
+
+/* multilanguage toggle */
+.ml-toggle {
+	position: absolute;
+	right: 0;
+	bottom: 500px;
+}
+.reveal .text-toggle {
+	font-size: 22px; 
+	line-height: 1.5;
+}
+
+/* Menu Bar */
+
+.menubar {
+	position: absolute;
+	-webkit-box-sizing: border-box;
+			box-sizing: border-box;
+	width: 100%;
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: flex;
+	-webkit-box-pack: center;
+		-ms-flex-pack: center;
+			justify-content: center;
+	-webkit-box-align: center;
+		-ms-flex-align: center;
+			align-items: center;
+	padding: 0 3vmin;
+	margin-bottom: 20px;
+	z-index: 2;
+	background-color: lighten($linkColor, 65%);
+	border-bottom: 1px solid lighten($linkColor, 60%);
+	 }
+
+.menubar ul.menu, .menubar .menu ul {
+	  list-style-type: none;
+	  margin-left: 0;
+	  text-align: center; }
+.menubar, .menubar a {
+	  font-size: 1rem; }
+  
+ .menu li {
+	display: inline-block; }
+
+.reveal.has-dark-background .menu a {
+	visibility: hidden;
+}
+
+// .menu a:hover {
+// 	  color: rgb(182, 117, 117); }
+  
+.menu a {
+	font-size: 1rem;
+	padding: 1rem;
+	display: block;
+	color: $selectionBackgroundColor; }
+.menu a:hover {
+	  color:  $linkColorHover; 
+	}
+  
+.menu a.active,
+.menu li.active a {
+	color: $linkColor;
+	pointer-events: none; }
+  
+.slides + .menubar {
+	bottom: 0;
+	border-top: 1px solid rgba(255, 255, 255, 0.5);
+	border-bottom: none; }
+  
+.slides + .menubar ~ .controls {
+	margin-bottom: 6vmin; }
+
+
+
+/*********************************************
+ * Custom css from white_custom_template.css
+ *********************************************/
+
+.header_bar{
+    width:100%;
+    height:100px;
+    color:#ffffff;
+    text-align: left;
+    margin-top:-60px !important;
+    margin-bottom:50px !important;
+    vertical-align: middle;
+}
+
+.header_title {
+    padding-left:20px !important;
+    color:#ffffff;
+    line-height:120px !important;
+    font-size:1.8em  !important;
+    font-weight:bold !important;
+}
+
+.contents_link {
+    font-size:1em  !important;
+    font-weight:bold !important;
+}
+.text-small {
+    color:#595959 !important;
+    text-align: justify;
+    text-justify: inter-word;
+    width:80%;
+    margin-left:10% !important;
+}
+.text-ex-small {
+  font-size:0.65em !important;
+  color:#595959 !important;
+  text-align: justify;
+  text-justify: inter-word;
+  width:80%;
+  margin-left:10% !important;
+}
+
+.text-small-centre {
+    font-size:0.8em !important;
+    color:#595959 !important;
+    width:80%;
+    margin-left:10% !important;
+}
+
+.white {
+    color:#ffffff !important;
+}
+
+.centregreentext {
+  color:#1bb580 !important;
+}
+
+.white a{
+    color: #64B5F6;
+}
+
+.deeppurple{
+    background-color: #673AB7;
+}
+
+.deeppurplefill{
+    fill: #673AB7;
+}
+
+.centregreenfill{
+    fill: #1bb580;
+}
+
+.centregreen {
+    background-color: #1bb580;
+}
+
+.green {
+    background-color: #1bb580;
+}
+
+.orange {
+    background-color: #FF9800;
+}
+
+.centreblue {
+    background-color: #007CE1;
+}
+
+.centrebluefill{
+    fill: #007CE1;
+}
+
+.centrered {
+    background-color:#f2645a ;
+}
+
+.centreredfill {
+    fill:#f2645a;
+}
+
+.yellow {
+    background-color: #FFD600;
+}
+
+.red{
+    background-color:#f2645a;
+}
+
+.grey {
+    background-color:#757575;
+}
+
+.title_container {
+    margin-top:75px;
+}
+
+.reveal p.image-text {
+    font-size:0.5em !important;
+    color:#999999;
+    margin-top: 0;
+}
+
+
+.text-bottom{
+    font-size:0.8em !important;
+    color:#555 !important;
+    width:80%;
+    margin-left:10% !important;
+    position:absolute !important;
+    top:625px !important;
+}
+
+img {
+  border-width:0px!important;
+}
+
+.reveal section img.no_shadow {
+  border: none;
+  box-shadow: none; 
+}
+
+
+/* Span Clas 'popup' for underlying words that have tooltip*/
+span.popup {
+  text-decoration: underline;
+  text-decoration-style: dotted;
+}
+
+
+.make-it-pop .menubar {
+	visibility: hidden;
+}
+
+.img-standard {
+	max-width: 80%;
+	max-height : 300px;
+	margin: 0 auto;
+  }
+
+
+#quiz {
+	h2 {
+		font-size: 2rem;
+	}
+
+	.quizArea, .quizResults {
+		border: none;
+		box-shadow: none;
+	}
+
+	.quizDescription {
+		font-size: 1rem;
+	}
+
+	a.button {
+		font-size: 1rem;
+		text-transform: uppercase;
+		color: white;
+		background-color: $selectionBackgroundColor;
+		padding: 0.5rem 1rem;
+	}
+
+	ol.questions {
+		font-size: 1rem;
+	}
+}
