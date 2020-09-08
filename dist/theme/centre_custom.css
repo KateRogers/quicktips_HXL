@@ -481,7 +481,8 @@ body,
 
 .reveal h6 {
   font-size: 35px;
-  color: #1bb580; }
+  color: #1bb580;
+  text-transform: lowercase; }
 
 .reveal .text-cover {
   font-size: 20px !important;
@@ -489,14 +490,14 @@ body,
   line-height: 1.5 !important; }
 
 .reveal a {
-  color: #007CE1; }
+  color: #444; }
 
 .white a {
-  color: #FFF;
+  color: #444;
   text-decoration: underline; }
 
 .white a:hover {
-  color: #007CE1; }
+  color: #444; }
 
 section.has-dark-background,
 section.has-light-background {
@@ -538,15 +539,15 @@ section.has-light-background {
 
 .slide-menu-button a,
 .slide-menu-button a:hover {
-  color: #007CE1; }
+  color: #444; }
 
 .reveal.has-light-background .slide-menu-button a,
 .slide-menu-button a:hover {
-  color: #FFF; }
+  color: #ffffff; }
 
 .reveal.has-dark-background .slide-menu-button a,
 .slide-menu-button a:hover {
-  color: #FFF; }
+  color: #ffffff; }
 
 .reveal .slide-number a {
   color: #007ce1; }
