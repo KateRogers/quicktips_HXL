@@ -34,7 +34,7 @@
 				</ul>
 			</div>
 			<div class="slides">
-				<section data-state="make-it-pop" data-background-image="pics/backgroundimg_green.png" >
+				<section data-state="make-it-pop" data-background="#1bb580" data-background-image="pics/backgroundimg_green.png" >
                     <div class="title_container">
 						<h2 class="white">Introduction to HXL </h2>
 						<h3 class="white">Adding Hashtags & Attributes</h3>
@@ -53,7 +53,7 @@
 						</ol>
 					</p>
 				</section>
-				<section id="HXL Basics" data-state="make-it-pop" data-background-image="pics/red_back_drop.png" >
+				<section id="HXL Basics" data-state="make-it-pop" data-background="#1bb580" data-background-image="pics/red_back_drop.png" >
 						<div class="title_container">
 							<h2 class="white">The Benefits of HXL</h2>
 						</div>
@@ -115,7 +115,7 @@
 						<img src="pics/help_downstream.png" alt="help downstream" />
 					</div>
 				</section>
-				<section id="Hashtags_Attributes" data-state="make-it-pop" data-background-image="pics/blue_back_dots.png"  >
+				<section id="Hashtags_Attributes" data-state="make-it-pop" data-background-image="pics/blue_back_dots.png" data-background="#1bb580" >
 					<div class="title_container">
 						<h2 class="white">HXL Hashtags & Attributes</h2>
 					</div>
@@ -144,7 +144,7 @@
 					<h4>HXL Attributes</h4>
 					<p class="text-small">The attributes of the HXL hashtag are used to specify characteristics. They do not carry complete information on their own and can only be understood when combined with the hashtag they are describing. </p>
 					
-					<p class="text-small">	HXL attributes start with “+” sign and always follow the hashtag that they describe. A hashtag may have any number of attributes, and order does not matter, so #org+funder+code has exactly the same meaning as #org+code+funder. 
+					<p class="text-small">	HXL attributes start with “+” sign and always follow the hashtag that they describe. It is HXL compliant to add a space before the "+", but not after it. A hashtag may have any number of attributes, and order does not matter, so #org+funder+code has exactly the same meaning as #org+code+funder. 
 					</p>
 					<h6>+start</h6>
 					<h6>+name</h6>
@@ -170,53 +170,54 @@
 							<li>In your new row, add a HXL hashtag for each column you want to label.
 							</li>
 							<li>Use HXL attributes to refine the meaning of the hashtags.</li>
+							<li>You do not need to add HXL tags to every column in the spreadsheet.</li>
 						</ol>
 					</p>
 					<div class="img-standard">
 						<img src="pics/table.png" alt="hxl steps two" />
 					</div>
 				</section>
-					<section id="Right_tag" data-state="make-it-pop" data-background-image="pics/backgroundimg_green.png" >
+					<section id="Right_tag" data-state="make-it-pop" data-background="#1bb580" data-background-image="pics/backgroundimg_green.png" >
 						<div class="title_container">
 							<h2 class="white">Choosing the Right Tag</h2>
 						</div>
 					</section>
-					<section id="population_tags" data-menu-title="Population Specific Tags" name="Choosing HXL Tags">
-						<h4>Population Specific Hashtags</h4>
-						<p class="text-small">The HXL standard defines a wide range for core hashtags and attribute. While the HXL tags are often self-explanatory, choosing the right tag for your data can take practice. The following tools were developed to make choosing the right HXL tag easier.</p>
+					<section id="core_tags" data-menu-title="Core Hashtags and Attributes" name="Choosing HXL Tags">
+						<h4>Core Hashtags and Attributes</h4>
+						<p class="text-small">The HXL standard defines a wide range for core hashtags and attributes. While the HXL tags are often self-explanatory, choosing the right tag for your data can take practice. The following tools were developed to make choosing the right HXL tag easier.</p>
 						<p class="text-small">
 							<ul class="text-small">
 								<li><a herf="https://hxlstandard.org/standard/1-1final/postcards/">HXL Postcard</a>: A convenient summary of the core HXL hashtags and attributes. Available in multiple languages.
 								</li>
 								<li><a href="https://tools.humdata.org/examples/hxl/">HXL Tag Assist</a>: A tool to explore popular hashtags and see examples of how the humanitarian community is using the standard with data on HDX. </li>
-								<li><a herf="https://hxlstandard.org/standard/1_0final/dictionary/">HXL Dictionary</a>: An overview of the core HXL hastags and attributes. Your go to reference if you want to look up the meaning of hashtag or attribute.</li>
+								<li><a herf="https://hxlstandard.org/standard/1_0final/dictionary/">HXL Dictionary</a>: An overview of the core HXL hashtags and attributes. Your go to reference if you want to look up the meaning of hashtag or attribute.</li>
 							</ul>
 						</p>
 					</section>
 					<section id="postcard" data-menu-title="HXL Postcard" name="Choosing HXL Tags">
 						<h4>HXL Postcard </h4>
-						<p class="text-small">This postcard provides a summary of the core hasttags and attributes. It is the ideal reference document for newcomers to the HXL standard.In this section, we will go over in detail these core HXL hashtags and how to refine their meaning using common attributes.</p>
+						<p class="text-small">This postcard provides a summary of the core hashtags and attributes. It is the ideal reference document for newcomers to the HXL standard.In this section, we will go over in detail these core HXL hashtags and how to refine their meaning using common attributes.</p>
 						<div class="img-standard">
 							<img src="pics/postcard_both.png" alt="hxl steps two" />
 						</div>
 					</section>
-					<section id="core_hastags" data-menu-title="Core Hashtags" name="Choosing HXL Tags">
+					<section id="core_hashtags" data-menu-title="Core Hashtags" name="Choosing HXL Tags">
 						<h4>Core Hashtags</h4>
 						<p class="text-small">The core HXL hashtags can be grouped into five topic areas:
 							<ol class="text-small">
-								<li>Places: These include hastags like #country, #adm3 and #geo. They are used when you have data on the adminstrateive level or a geolocation.</li>
-								<li>People and households: These include hastags like #affected and #inneed. They are used when you have data about the people affected by the crisis and their needs</li>
+								<li>Places: These include hashtags like #country, #adm3 and #geo. They are used when you have data on the administrative level or a geolocation.</li>
+								<li>People and households: These include hashtags like #affected and #inneed. They are used when you have data about the people affected by the crisis and their needs</li>
 								<li>Responses and other operations: These include hashtags like #org and #indicator. They are used when you have data about the response by organisations and people seeking to help those who need assistance.
 								</li>
-								<li>Crises, incidents and events: These include hastags like #impact and #crisis.and
+								<li>Crises, incidents and events: These include hashtags like #impact and #crisis. and
 								</li>
-								<li>General metadata: These inlcude hastags like #date and #status. 
+								<li>General metadata: These include hashtags like #date and #status. 
 								</li>				
 							</ol>
 						</p>
-						<p class="text-small">Let's take a look at the place and people and households hastags in more detail.</p>
+						<p class="text-small">Let's take a look at the place and people and households hashtags in more detail.</p>
 					</section>
-					<section id="place_hastags" data-menu-title="Place Hashtags" name="Choosing HXL Tags">
+					<section id="place_hashtags" data-menu-title="Place Hashtags" name="Choosing HXL Tags">
 						<h4>Place Hashtags</h4>
 						<table>
 							<thead><tr>
@@ -228,12 +229,12 @@
 							<tr>		
 								<td>#region</td>
 								<td>Supra- or cross-national region (e.g. Sahel, Horn of Africa, Caribbean).</td>
-								<td>+name, +code, +typee</td>
+								<td>+name, +code, +type</td>
 							</tr>
 							<tr>		
 								<td>#country</td>
 								<td>Country (often left implied in a dataset).</td>
-								<td>+name, +code, language attributes like +ar</td>
+								<td>+name, +code, language attributes like +l_ar</td>
 							</tr>
 							<tr>
 								<td>#adm1</td>
@@ -258,7 +259,7 @@
 							</tbody>
 						</table>
 					</section>
-					<section id="people_hastags" data-menu-title="People Hashtags" name="Choosing HXL Tags">
+					<section id="people_hashtags" data-menu-title="People Hashtags" name="Choosing HXL Tags">
 						<h4>People Hashtags</h4>
 						<table>
 							<thead><tr>
@@ -301,13 +302,13 @@
 						</table>
 					</section>
 					<section id="refining" data-menu-title="Refining Hashtags" name="Choosing HXL Tags">
-						<h4>Refining Hastags using Attributes</h4>
+						<h4>Refining Hashtags using Attributes</h4>
 						<p class="text-small"> Core HXL hashtags like #inneed specify the thing a column of data is talking about (people in need of humanitarian assistance). However, we often need to be able refine this hashtag to make it more precise (is the data about male or female people in need? adults or children? refugees or IDPs? in camp or self-hosted?).</p>
-						<p class="text-small">Data provides may invent their own attributes to suit their local data needs. However, there are some recommended common attributes that will be useful across many data types. We will go over how to use the following to refine the meaning of a hastag:
+						<p class="text-small">Data providers may invent their own attributes to suit their local data needs. However, there are some recommended common attributes that will be useful across many data types. We will go over how to use the following to refine the meaning of a hashtag:
 							<ol class="text-small">
 								<li>Sex and Age Dissaggregated Attributes</li>
 								<li>Language Attributes </li>
-								<li>Impact Attributes</li>
+								<li>Impact Att</li>
 								<li>Name, Code and Classifiers</li>
 							</ol>
 						</p>
@@ -388,7 +389,7 @@
 							</tr>
 							<tr>
 								<td>+incamp</td>
-								<td>those displaced into official camps.y</td>
+								<td>those displaced into official camps.</td>
 							</tr>
 							<tr>
 								<td>+injured</td>
@@ -446,8 +447,8 @@
 						<p class="text-small"> In HXL, we deal with this by using the following common attributes:
 							<ul class="text-small">
 								<li>+name is used when our column contains data for the name of something. This is what humans call the thing.</li>
-								<li>+code is used when our column contains data for the standarised code of something. This is qhat computers might call the thing.</li>
-								<li>+typy is used when our column contains data on classifications somthing. </li>
+								<li>+code is used when our column contains data for the standarised code of something. This is what computers might call the thing.</li>
+								<li>+type is used when our column contains data on how to classify things. </li>
 							</ul>
 						</p>
 						<p class="text-small"> Now lets take a look at each of these attributes in a bit more detail.</p>
@@ -528,7 +529,7 @@
 								<td>ML020501 </td>
 							</tr>
 							<tr>
-								<td>##sector +cluster +code  </td>
+								<td>#sector +cluster +code  </td>
 								<td>OCHA code for a cluster  </td>
 								<td>HEA</td>
 							</tr>
@@ -635,7 +636,7 @@
 							}
 						</script>
 						</section>
-					<section id="Rules of The Road" data-state="make-it-pop" data-background-image="pics/backgroundimg_green.png">
+					<section id="Rules of The Road" data-state="make-it-pop" data-background="#1bb580" data-background-image="pics/backgroundimg_green.png">
 						<div class="title_container">
 							<h2 class="white">HXL Rules and Conventions</h2>
 						</div>
@@ -648,7 +649,7 @@
 						</p>
 					</section>
 					<section id="Rule 1" data-menu-title="Header Names & Column Order" name="HXL Rules of the Road">
-						<h4>HXL Tags Seperate Headers from Data</h4>
+						<h4>HXL Tags Separate Headers from Data</h4>
 						<p class="text-small">While HXL uses hashtags to label columns of data, it still allows you to include human-readable headers. The headers go before the row containing the hashtags. The data starts in the next row. You can include up to 24 rows of headers before the HXL hashtag row.
 						</p>
 					</section>
@@ -658,8 +659,8 @@
 						</p>
 					</section>
 					<section id="Rule 1" data-menu-title="Multiple Columns for Multiple Values" name="HXL Rules of the Road">
-						<h4>Use Multiple Columns for Data with Mulitple Values</h4>
-						<p class="text-small">Humanitarian data often contains more than one value for the same type of information. For example, an aid project might target two countries or involve two different organisation. In HXL, the preferred way to handle repetition is by repeating columns with the same hashtag, as many times as needed, as with #org in this example:
+						<h4>Use Multiple Columns for Data with Multiple Values</h4>
+						<p class="text-small">Humanitarian data often contains more than one value for the same type of information. For example, an aid project might target two countries or involve two different organisations. In HXL, the preferred way to handle repetition is by repeating columns with the same hashtag, as many times as needed, as with #org in this example:
 						</p>
 					</section>
 					<section id="Unique_tags" data-menu-title="Create your Own Tags" name="HXL Rules of the Road">
@@ -699,9 +700,32 @@
 					auto: false
 				},
 
+				menu: {
+					side: 'left',
+					width: 'normal',
+					numbers: false,
+					titleSelector: 'h1, h2, h3, h4, h5, h6',
+					useTextContentForMissingTitles: false,
+					hideMissingTitles: false,
+					markers: true,
+					custom: false,
+					themes: false,
+					themesPath: 'css/theme/',
+					transitions: false,
+					openButton: true,
+					openSlideNumber: false,
+					keyboard: true,
+					sticky: false,
+					autoOpen: true,
+					delayInit: false,
+					openOnInit: false,
+					loadIcons: true
+				},
+
 				dependencies: [
        			 // other dependencies
-        		{ src: 'plugin/quiz/js/quiz.js', async: true, callback: function() { prepareQuizzes({}); } }
+				{ src: 'plugin/quiz/js/quiz.js', async: true, callback: function() { prepareQuizzes({}); } },
+				{ src: 'plugin/menu/menu.js' }
         		// other dependencies
     			],
 
