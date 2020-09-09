@@ -13,11 +13,11 @@ section {
 .reveal table th {
   font-weight: bold;
   background-color: #1bb580;
-  font-size: 25px;
+  font-size: 22px;
   color: #fff; }
 
 .reveal table td {
-  font-size: 22px;
+  font-size: 20px;
   color: #595959; }
 
 /*********************************************
@@ -468,10 +468,10 @@ body,
   font-size: 73px; }
 
 .reveal h2 {
-  font-size: 59px; }
+  font-size: 50px; }
 
 .reveal h3 {
-  font-size: 47px; }
+  font-size: 42px; }
 
 .reveal h4 {
   font-size: 38px; }

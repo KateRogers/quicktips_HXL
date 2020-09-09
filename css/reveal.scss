@@ -265,7 +265,7 @@ $controlsArrowAngleActive: 36deg;
 	right: $spacing;
 	left: auto;
 	z-index: 11;
-	color: #000;
+	color: #fff;
 	pointer-events: none;
 	font-size: 10px;
 
@@ -482,7 +482,7 @@ $controlsArrowAngleActive: 36deg;
 	color: #fff;
 }
 .reveal.has-light-background .controls {
-	color: #000;
+	color: #fff;
 }
 
 // Disable active states on touch devices
@@ -1570,8 +1570,8 @@ $overlayHeaderPadding: 5px;
 	}
 
 	.reveal > .overlay.overlay-help .viewport .viewport-inner table th {
-		padding-top: 20px;
-		padding-bottom: 20px;
+		padding-top: 18px;
+		padding-bottom: 18px;
 	}
 
 
